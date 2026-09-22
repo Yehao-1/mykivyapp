@@ -5,6 +5,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # 自动同意Android许可协议，解决等待Y确认问题
+      ANDROID_HOME: ${{ github.workspace }}/.buildozer/android/platform/android-sdk
+      ANDROID_SDK_ROOT: ${{ github.workspace }}/.buildozer/android/platform/android-sdk
+      BUILDOZER_ANDROID_SDK_ACCEPT_LICENSE: 1
     steps:
       - uses: actions/checkout@v4
 
