@@ -2,10 +2,14 @@
 
 # 应用名称（手机桌面显示的名字）
 package.name = mykivyapp
-# 包域名，必须三段式，随便写，不要用中文
+# APP标题，新增这一行
+title = MyKivyApp
+# 版本号，新增这一行
+version = 0.1
+# 包域名，必须三段式，不要中文
 package.domain = org.yehao.mykivyapp
 
-# 入口python文件，你的主程序是work.py就写work.py！！！
+# 入口python文件，你的主程序是work.py
 package.main = work.py
 
 source.dir = .
@@ -32,3 +36,6 @@ fullscreen = 0
 [buildozer]
 log_level = 2
 warn_on_root = 1
+
+title = MyKivyApp
+version = 0.1
