@@ -1,41 +1,24 @@
 [app]
-
-# 应用名称（手机桌面显示的名字）
-package.name = mykivyapp
-# APP标题，新增这一行
 title = MyKivyApp
-# 版本号，新增这一行
-version = 0.1
-# 包域名，必须三段式，不要中文
+package.name = mykivyapp
 package.domain = org.yehao.mykivyapp
+version = 0.1
 
-# 入口python文件，你的主程序是work.py
 package.main = work.py
-
 source.dir = .
 source.include_exts = py,png,jpg,json,atlas,ttf
 
-# Android SDK版本要求
-android.sdk = 24
-android.ndk = 25b
 android.api = 33
+android.ndk = 25b
 
-# 开启kivy
 requirements = python3,kivy
-
-# 应用方向 portrait竖屏 / landscape横屏
 orientation = portrait
-
-# 是否全屏
 fullscreen = 0
 
-# 应用图标（没有图标就注释掉这两行，前面加#）
+# 没有图标就保留注释
 # icon.filename = icon.png
 # presplash.filename = splash.png
 
 [buildozer]
 log_level = 2
 warn_on_root = 1
-
-title = MyKivyApp
-version = 0.1
